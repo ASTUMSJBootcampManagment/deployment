@@ -50,7 +50,8 @@ app.use(
       "http://localhost:5174",
       "http://localhost:5175",
       "http://localhost:5176",
-      "https://deployment-theta-nine.vercel.app/"
+      "https://deployment-theta-nine.vercel.app",
+      "https://deployment-git-main-astu-msj.vercel.app"
     ],
 
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
