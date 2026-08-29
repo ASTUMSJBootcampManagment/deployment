@@ -30,16 +30,10 @@ require("./models/Resource");
 
 const app = express();
 
+// Public CORS configuration allowing requests from any origin
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "http://localhost:5174",
-      "http://localhost:5175",
-      "http://localhost:5176",
-      "https://deployment-theta-nine.vercel.app",
-      "https://deployment-git-main-astu-msj.vercel.app"
-    ],
+    origin: "*",
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
   }),
@@ -59,7 +53,7 @@ app.get("/health", (req, res) => {
   });
 });
 
-// Route prefixes updated to match frontend paths without /api
+// Routes matched without /api prefix
 app.use("/auth", authRoutes);
 app.use("/admin", adminRoute);
 app.use("/system", systemRoute);
