@@ -84,7 +84,7 @@ Each role has access to features appropriate to its responsibilities.
 
 ---
 
-## 👨 Admin Management
+##  Admin Management
 
 Administrators can manage the overall bootcamp through a centralized dashboard.
 
@@ -120,7 +120,7 @@ Features include:
 
 ---
 
-## 👨 Mentor Management
+##  Mentor Management
 
 The system provides functionality for managing mentors and their relationship with bootcamp batches and students.
 
