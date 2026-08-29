@@ -10,31 +10,18 @@ const cors = require("cors");
 const dbConnect = require("./config/dbConnect");
 
 const authRoutes = require("./routes/authroute");
-
 const userRoutes = require("./routes/userRoute");
-
 const batchRoutes = require("./routes/BatchRoute");
-
 const announcementRoute = require("./routes/announcementRoute");
-
 const attendanceRoute = require("./routes/attendanceRoute");
-
 const progressRoute = require("./routes/progressRoutes");
-
 const assignmentRoutes = require("./routes/assignmentRoutes");
-
 const gradingRoutes = require("./routes/gradingRoutes");
-
 const dashboardRoute = require("./routes/dashboardRoute");
-
 const studentRoutes = require("./routes/studentRoutes");
-
 const adminRoute = require("./routes/adminRoute");
-
 const systemRoute = require("./routes/systemRoute");
-
 const resourceRoutes = require("./routes/resourceRoutes");
-
 const notificationRoutes = require("./routes/notificationRoutes");
 
 require("./models/userModel");
@@ -53,9 +40,7 @@ app.use(
       "https://deployment-theta-nine.vercel.app",
       "https://deployment-git-main-astu-msj.vercel.app"
     ],
-
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-
     allowedHeaders: ["Content-Type", "Authorization"],
   }),
 );
@@ -74,37 +59,26 @@ app.get("/api/health", (req, res) => {
   });
 });
 
-app.use("/api/auth", authRoutes);
+// UPDATED: Changed from "/api/auth" to "/auth" to match your frontend Axios request
+app.use("/auth", authRoutes);
 
 app.use("/api/admin", adminRoute);
-
 app.use("/api/system", systemRoute);
-
 app.use("/api/users", userRoutes);
-
 app.use("/api/batches", batchRoutes);
 app.use("/api/announcements", announcementRoute);
 app.use("/api/announcement", announcementRoute);
-
 app.use("/api/attendance", attendanceRoute);
-
 app.use("/api/progress", progressRoute);
-
 app.use("/api/assignments", assignmentRoutes);
-
 app.use("/api/grading", gradingRoutes);
-
 app.use("/api/dashboard", dashboardRoute);
-
 app.use("/api/student", studentRoutes);
-
 app.use("/api/resources", resourceRoutes);
-
 app.use("/api/notifications", notificationRoutes);
 
 app.use((err, req, res, next) => {
   console.error(err);
-
   res.status(err.statusCode || 500).json({
     success: false,
     message: err.message || "Internal server error.",
