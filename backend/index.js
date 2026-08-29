@@ -52,30 +52,29 @@ app.use(
 );
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/api/health", (req, res) => {
+app.get("/health", (req, res) => {
   res.json({
     success: true,
     message: "ASTU MSJ Bootcamp API is running.",
   });
 });
 
-// UPDATED: Changed from "/api/auth" to "/auth" to match your frontend Axios request
+// Route prefixes updated to match frontend paths without /api
 app.use("/auth", authRoutes);
-
-app.use("/api/admin", adminRoute);
-app.use("/api/system", systemRoute);
-app.use("/api/users", userRoutes);
-app.use("/api/batches", batchRoutes);
-app.use("/api/announcements", announcementRoute);
-app.use("/api/announcement", announcementRoute);
-app.use("/api/attendance", attendanceRoute);
-app.use("/api/progress", progressRoute);
-app.use("/api/assignments", assignmentRoutes);
-app.use("/api/grading", gradingRoutes);
-app.use("/api/dashboard", dashboardRoute);
-app.use("/api/student", studentRoutes);
-app.use("/api/resources", resourceRoutes);
-app.use("/api/notifications", notificationRoutes);
+app.use("/admin", adminRoute);
+app.use("/system", systemRoute);
+app.use("/users", userRoutes);
+app.use("/batches", batchRoutes);
+app.use("/announcements", announcementRoute);
+app.use("/announcement", announcementRoute);
+app.use("/attendance", attendanceRoute);
+app.use("/progress", progressRoute);
+app.use("/assignments", assignmentRoutes);
+app.use("/grading", gradingRoutes);
+app.use("/dashboard", dashboardRoute);
+app.use("/student", studentRoutes);
+app.use("/resources", resourceRoutes);
+app.use("/notifications", notificationRoutes);
 
 app.use((err, req, res, next) => {
   console.error(err);
