@@ -1,3 +1,10 @@
+<img width="1205" height="632" alt="image" src="https://github.com/user-attachments/assets/fe17dfcb-e14f-4cb3-9019-15f8ffac43a6" />
+<img width="1247" height="607" alt="image_2026-08-29_20-36-18" src="https://github.com/user-attachments/assets/504a0eb2-a3f7-4db0-bc7d-66d010ebf169" />
+<img width="710" height="552" alt="Screenshot 2026-08-28 172556" src="https://github.com/user-attachments/assets/af8ca1da-9150-4dc5-8651-1dd484416293" />
+<img width="1234" height="566" alt="Screenshot 2026-08-29 011803" src="https://github.com/user-attachments/assets/1aa2ab9c-28e9-4686-b8b8-dfa47280749f" />
+<img width="1250" height="654" alt="Screenshot 2026-08-29 202800" src="https://github.com/user-attachments/assets/cb2cc22f-5c78-4fd8-9cd6-68a10ac1dc1b" />
+<img width="1213" height="629" alt="Screenshot 2026-08-29 203059" src="https://github.com/user-attachments/assets/d308b994-0fe9-4faa-8e63-f8644a053358" />
+<img width="1247" height="607" alt="Screenshot 2026-08-29 203416" src="https://github.com/user-attachments/assets/a7acc234-3e2a-42b4-98e7-42cf2d7d01a5" />
 # ASTUMSJ Bootcamp Management System
 
 A full-stack web-based **Bootcamp Management System** developed for the **ASTU Muslim Students Summer Bootcamp (ASTUMSJ)**.
