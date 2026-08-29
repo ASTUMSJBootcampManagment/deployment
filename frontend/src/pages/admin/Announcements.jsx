@@ -28,7 +28,6 @@ export default function Announcements() {
     setLoading(true);
 
     try {
-      // Updated endpoint URL from /announcements/get to /announcements
       const [announcementResponse, batchResponse] = await Promise.all([
         API.get("/announcements"),
         API.get("/batches"),
@@ -60,7 +59,6 @@ export default function Announcements() {
     setSaving(true);
 
     try {
-      // Updated endpoint URL to match /announcements REST API conventions
       await API.post("/announcements", {
         title: formData.title,
         content: formData.content,
